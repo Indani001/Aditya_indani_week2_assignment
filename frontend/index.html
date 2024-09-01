@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Blog Platform</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <span>My Blog</span>
+      </nav>
+    </header>
+    <div id="app">
+      <form id="blog-form">
+        <input type="hidden" id="blog-id" value="" />
+        <input type="text" id="title" placeholder="Blog Title" required />
+        <textarea id="content" placeholder="Blog Content" required rows="5"></textarea>
+        <button type="submit">Save Blog</button>
+      </form>
+      <div id="blogs"></div>
+    </div>
+    <script src="blog.js"></script>
+  </body>
+</html>
